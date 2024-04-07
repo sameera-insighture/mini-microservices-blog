@@ -36,7 +36,6 @@ app.post("/posts/:id/comments", async (req, res) => {
       status: "pending",
     },
   });
-  console.log("CommentCreated");
 
   res.status(201).send(comments);
 });
@@ -59,7 +58,6 @@ app.post("/events", async (req, res) => {
         status,
       },
     });
-    console.log("CommentUpdated");
   }
   res.send({});
 });
