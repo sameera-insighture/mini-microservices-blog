@@ -5,6 +5,7 @@ import Comments from "../Comments/Comments";
 export interface Comment {
   id: string;
   content: string;
+  status: "approved" | "pending" | "rejected";
 }
 
 interface Post {
